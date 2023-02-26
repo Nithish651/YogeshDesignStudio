@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useRef, useEffect, useState } from "react";
 import { Power3, gsap } from "gsap/gsap-core";
@@ -7,7 +6,7 @@ import { CSSPlugin } from "gsap/CSSPlugin";
 function App() {
   gsap.registerPlugin(CSSPlugin);
 
-  const [showHome, setShowhome] = useState(false);
+  const [showHome, setShowhome] = useState(true);
   useEffect(() => {
     let tl = gsap.timeline();
     let duration = 3;
@@ -35,12 +34,14 @@ function App() {
 
   return (
     <>
-      <div
-        ref={(el) => {
-          banner = el;
-        }}
-        className="banner"
-      ></div>
+      {
+        <div
+          ref={(el) => {
+            banner = el;
+          }}
+          className="banner"
+        ></div>
+      }
 
       {showHome && <div>Home Page</div>}
     </>
