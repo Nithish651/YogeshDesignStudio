@@ -2,11 +2,14 @@ import "./App.css";
 import { useRef, useEffect, useState } from "react";
 import { Power3, gsap } from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";
+import AppEntry from "./components/AppEntry";
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   gsap.registerPlugin(CSSPlugin);
 
-  const [showHome, setShowhome] = useState(true);
+  const [showHome, setShowhome] = useState(false);
   useEffect(() => {
     let tl = gsap.timeline();
     let duration = 3;
@@ -43,7 +46,8 @@ function App() {
         ></div>
       }
 
-      {showHome && <div>Home Page</div>}
+      {showHome ? <Navbar /> : null}
+      <Outlet />
     </>
   );
 }
