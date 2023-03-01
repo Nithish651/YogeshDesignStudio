@@ -33,7 +33,7 @@ function Navbar() {
 
   useEffect(() => {
     console.log(scrollPos);
-    if (scrollPos.lastY == scrollPos.Y) return;
+    if (scrollPos.lastY === scrollPos.Y) return;
 
     if (scrollPos.lastY > scrollPos.Y) {
       console.log("scrollingup");

@@ -1,6 +1,4 @@
-import { Outlet } from "react-router-dom";
 import "./AppEntry.css";
-import Navbar from "./Navbar/Navbar";
 
 const AppEntry = (props) => {
   return (

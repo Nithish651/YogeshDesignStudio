@@ -2,7 +2,6 @@ import "./App.css";
 import { useRef, useEffect, useState } from "react";
 import { Power3, gsap } from "gsap/gsap-core";
 import { CSSPlugin } from "gsap/CSSPlugin";
-import AppEntry from "./components/AppEntry";
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 
