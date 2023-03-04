@@ -7,11 +7,12 @@
 
 *{
   font-family: 'Montserrat';
+  background: #19191a;
 }
 
 .banner {
 
-  background: url("./assets/images/hero.jpg") no-repeat center;
+
   background-size: 100%;
   width: inherit;
   height: inherit;
@@ -22,5 +23,64 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+#animation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+#demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#demo span {
+  
+  color: #fff;
+  font-weight: 400;
+}
+.color-1 {
+  color: #ff6347;
+}
+.color-2 {
+  color: #bada55;
+}
+.color-3 {
+  color: #ff1493;
+}
+.color-4 {
+  color: #09a;
+}
+
+.subtext, .subtext1, .subtext2{
+  color: #fff;
+}
+
+.revealer{
+  height: 10px;
+  width: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background:orange;
+  margin: auto;
+  border-radius: 5000px;
+  z-index: 200;
+
 }
 
